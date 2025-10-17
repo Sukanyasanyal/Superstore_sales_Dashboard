@@ -1,0 +1,1 @@
+"SELECT Region, SUM(Sales) FROM superstore_sales GROUP BY Region;"
