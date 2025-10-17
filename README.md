@@ -21,23 +21,25 @@ Visualization & Reporting: Microsoft Power BI Desktop
 ## 📁 Project Structure
 The repository is organized to ensure all project components (code, data, analysis, and final reports) are easily accessible and reproducible:
 
-sales_dashboard_project/
-├── dashboards/                  # Contains the final Power BI file
-│   └── Superstore_Sales_Dashboard_Final.pbix
-├── data/
-│   ├── raw/                     # Original, untouched dataset
-│   │   └── Sample - Superstore
-│   └── cleaned/                 # Intermediate database file (sales_data)
-├── docs/                        # Static reports and exports
-│   ├── Superstore_Sales_Dashboard.pdf
-│   └── Superstore_Sales_Dashboard_Final_Screenshot.PNG
-├── notebooks/                   # Detailed Exploratory Data Analysis (EDA)
-│   └── sales_analysis.ipynb
-├── sql/                         # Reusable SQL queries
-│   ├── create_superstore_table.sql
-│   ├── count_orders.sql
-│   └── sales_by_region.sql
-└── README.md
+- `sales_dashboard_project/`
+    - `dashboards/` # Contains the final Power BI file
+        - `Superstore_Sales_Dashboard_Final.pbix`
+    - `data/`
+        - `raw/` # Original, untouched dataset
+            - `Sample - Superstore.csv`
+        - `cleaned/` # Intermediate database and cleaned files
+            - `sales_data.db` (SQLite database)
+            - `superstore_cleaned.csv`
+    - `docs/` # Static reports and exports
+        - `Superstore_Sales_Dashboard.PDF`
+        - `Superstore_Sales_Dashboard_Final_Screenshot.png`
+    - `notebooks/` # Detailed Exploratory Data Analysis (EDA)
+        - `sales_analysis.ipynb`
+    - `sql/` # Reusable SQL queries
+        - `create_superstore_table.sql`
+        - `count_orders.sql`
+        - `sales_by_region.sql`
+    - `README.md`
 
 ---
 
@@ -75,5 +77,6 @@ To view or reproduce the analysis:
 2. View the Dashboard: Open dashboards/Superstore_Sales_Dashboard_Final.pbix in Power BI Desktop.
 
 3. Review the Analysis: Open notebooks/sales_analysis.ipynb in a Jupyter environment (like Google Colab or VS Code) to see the code execution and results.
+
 
 4. Inspect the SQL: Review the .sql files in the sql/ folder to see the database schema and native queries.
